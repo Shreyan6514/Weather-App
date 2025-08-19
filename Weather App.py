@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 from datetime import datetime
 from dotenv import find_dotenv, load_dotenv
@@ -9,13 +10,22 @@ load_dotenv(dotenv_path)  # load .env file as environment variables
 
 user_api = os.getenv("api-key")
 location = input("Enter the city name: ")
-lang = input("Enter the language: ")
 
-complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+user_api+"&lang="+lang
-#print (complete_api_link)
+with open('languages.json') as f: #open json file and store language codes
+    language_codes = json.load(f)
+
+lang = input("Enter the language: ").casefold() #input language and convert to lowercase
+lang_code = language_codes.get(lang)
+
+if lang_code:
+    complete_api_link = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={user_api}&lang={lang_code}"
+else:
+    print("Invalid language. Defaulting to English.")
+    complete_api_link = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={user_api}&lang=en" #print (complete_api_link) in English
+
 api_link = requests.get(complete_api_link)
 api_data = api_link.json()
-#print(api_data) #checking translation
+print(api_data) #checking translation
 
 if api_data['cod']=='404':
     print ("-------------------------------------------------------------")
