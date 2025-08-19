@@ -40,9 +40,9 @@ The app allows users to enter any city name and displays the current weather det
 ## ⚙️ Configuration
 •	The app uses a Weather API key (OpenWeatherMap).
 •	By default, the app looks for an environment variable named api-key.
-•	If you don’t want to use environment variables, open weather.py and replace **os.getenv("api-key")** with your own key directly.
+•	If you don’t want to use environment variables, open weather.py and replace os.getenv("api-key") with your own key directly.
 
-Example:
-  **user_api = "your_api_key_here"**
+### Example:
+	**user_api = "your_api_key_here"**
 
 You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
