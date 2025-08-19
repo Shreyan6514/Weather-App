@@ -10,7 +10,7 @@ The app allows users to enter any city name and displays the current weather det
 - 🌍 **City-based Weather Search** – Enter any city to get real-time weather info  
 - 🌐 **Multilingual Support** – Displays results in multiple languages  
 - ⚡ **API Integration** – Uses a weather API to fetch live data  
-- 🧠 **Error Handling** – Handles invalid inputs and connection errors gracefully  
+- 🧠 **Error Handling** – Handles invalid inputs
 - 💻 **Simple UI (Console-based)** – Minimal, user-friendly input/output flow  
 
 ---
