@@ -17,7 +17,7 @@ The app allows users to enter any city name and displays the current weather det
 
 ## 🛠️ Tech Stack
 
-- **Python 3.x**
+- **Python 3.13.2**
 - **Requests** (for API calls)
 - **JSON** (for parsing API responses)
 - **Translation library** 
