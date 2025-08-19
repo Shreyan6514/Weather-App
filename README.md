@@ -38,7 +38,7 @@ The app allows users to enter any city name and displays the current weather det
 4. Run the app:
   python weather.py
 
-⚙️ Configuration
+## ⚙️ Configuration
 	•	The app uses a Weather API key (e.g., OpenWeatherMap).
 	•	Replace the placeholder API_KEY in weather.py with your own key.
 
