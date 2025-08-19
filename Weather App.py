@@ -1,8 +1,13 @@
 import requests
 import os
-from datetime import datetime
 
-user_api = ('21df6823bd02050f6c3b45dbdef6e3c8')
+from datetime import datetime
+from dotenv import find_dotenv, load_dotenv
+
+dotenv_path = find_dotenv()  # find .env file
+load_dotenv(dotenv_path)  # load .env file as environment variables
+
+user_api = os.getenv("api-key")
 location = input("Enter the city name: ")
 lang = input("Enter the language: ")
 
