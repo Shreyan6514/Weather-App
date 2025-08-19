@@ -42,6 +42,6 @@ The app allows users to enter any city name and displays the current weather det
 •	Replace the placeholder API_KEY in weather.py with your own key.
 
 Example:
-  *API-KEY = "your_api_key_here"*
+  **API-KEY = "your_api_key_here"**
 
 You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
