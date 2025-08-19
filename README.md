@@ -20,12 +20,29 @@ The app allows users to enter any city name and displays the current weather det
 - **Python 3.x**
 - **Requests** (for API calls)
 - **JSON** (for parsing API responses)
-- **Translation library** (e.g., `googletrans`)
+- **Translation library** 
 
 ---
 
 ## 🚀 How to Run
 
 1. Clone the repository:
-```bash
-git clone https://github.com/Shreyan6514/Weather-App.git
+  git clone https://github.com/Shreyan6514/Weather-App.git
+
+2. Navigate into the project folder:
+  cd Weather-App
+
+3. Install required dependencies:
+  pip install -r requirements.txt
+
+4. Run the app:
+  python weather.py
+
+⚙️ Configuration
+	•	The app uses a Weather API key (e.g., OpenWeatherMap).
+	•	Replace the placeholder API_KEY in weather.py with your own key.
+
+Example:
+  API_KEY = "your_api_key_here"
+
+You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
