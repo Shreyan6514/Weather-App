@@ -14,7 +14,7 @@ location = input("Enter the city name: ")
 with open('languages.json') as f: #open json file and store language codes
     language_codes = json.load(f)
 
-lang = input("Enter the language: ").casefold() #input language and convert to lowercase
+lang = input("Enter the language (e.g. English, Polish, Hindi): ").casefold() #input language and convert to lowercase
 lang_code = language_codes.get(lang)
 
 if lang_code:
@@ -25,11 +25,11 @@ else:
 
 api_link = requests.get(complete_api_link)
 api_data = api_link.json()
-print(api_data) #checking translation
+#print(api_data) #checking translation
 
 if api_data['cod']=='404':
     print ("-------------------------------------------------------------")
-    print ("Invalid City: {}, Please check your City name".format(location))
+    print ("Invalid City: {}, Please check your city name".format(location))
     print ("-------------------------------------------------------------")
 
 
