@@ -51,3 +51,44 @@ button:hover {
     color: red;
     font-weight: bold;
 }
+
+/* 🌙 Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #f1f1f1;
+}
+
+body.dark-mode .container {
+    background: #1e272e;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #2f3640;
+    color: #f1f1f1;
+    border: 1px solid #777;
+}
+
+body.dark-mode button:hover {
+    background: #4ca1af;
+}
+
+#themeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+body.dark-mode #themeToggle {
+    background: #444;
+    color: #f1f1f1;
+}
+
