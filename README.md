@@ -63,3 +63,9 @@ You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
 ### Preview
 
+![Weather App Light Mode](static/Screenshot1.png)
+![Weather App Dark Mode](static/Screenshot2.png)
+![App Screenshot](static/Screenshot3.png)
+![App Screenshot](static/Screenshot4.png)
+
+
