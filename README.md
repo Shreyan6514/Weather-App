@@ -55,13 +55,13 @@ Users can enter any city name and view current weather details through a clean, 
 
 You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-###  Example Usage
+## Example Usage
 
 - Type a city name (e.g., Warsaw, Tokyo, New York)
 - Instantly view weather details such as temperature, humidity, conditions, and wind speed
 - Toggle Dark Mode 🌙 to switch themes dynamically
 
-### Preview
+## Preview
 
 ![Weather App Light Mode](static/Screenshot1.png)
 ![Weather App Dark Mode](static/Screenshot2.png)
