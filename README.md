@@ -1,7 +1,7 @@
-# 🌦️ Weather App (Python + API + Multilingual)
+# 🌦️ Weather App (Flask + API + Multilingual)
 
-A Python-based weather application that fetches real-time weather data using a public API.  
-The app allows users to enter any city name and displays the current weather details in multiple languages.
+A Flask-based weather web application that fetches **real-time weather data** using the **OpenWeatherMap API**.  
+Users can enter any city name and view current weather details through a clean, responsive web interface with **Dark Mode support**.
 
 ---
 
@@ -9,9 +9,10 @@ The app allows users to enter any city name and displays the current weather det
 
 - 🌍 **City-based Weather Search** – Enter any city to get real-time weather info  
 - 🌐 **Multilingual Support** – Displays results in multiple languages  
-- ⚡ **API Integration** – Uses a weather API to fetch live data  
+- ⚡ **API Integration** – Uses a weather API to fetch live data 
+- 🌙 **Dark Mode Toggle** – Switch between light and dark themes for better accessibility 
 - 🧠 **Error Handling** – Handles invalid inputs
-- 💻 **Simple UI (Console-based)** – Minimal, user-friendly input/output flow  
+- 💻 **Interactive Web UI** – Built using **HTML**, **CSS**, and **Flask** 
 
 ---
 
@@ -20,6 +21,10 @@ The app allows users to enter any city name and displays the current weather det
 - **Python 3.13.2**
 - **Requests** (for API calls)
 - **JSON** (for parsing API responses)
+- **Flask** – Web framework for backend and routing   
+- **JSON** – For parsing API responses  
+- **HTML, CSS & JavaScript** – For front-end design and dark mode toggle  
+- **Jinja2** – Flask’s template engine for inserting dynamic data into HTML
 - **Translation library** 
 
 ---
@@ -37,6 +42,9 @@ The app allows users to enter any city name and displays the current weather det
 ### 4. Run the app:
 	python weather.py
 
+### 5. Open the browser:
+	Visit http://127.0.0.1:5000/ to use the app.
+
 ## ⚙️ Configuration
 •	The app uses a Weather API key (OpenWeatherMap).
 •	By default, the app looks for an environment variable named api-key.
@@ -46,3 +54,12 @@ The app allows users to enter any city name and displays the current weather det
 	user_api = "your_api_key_here"
 
 You can get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
+
+###  Example Usage
+
+- Type a city name (e.g., Warsaw, Tokyo, New York)
+- Instantly view weather details such as temperature, humidity, conditions, and wind speed
+- Toggle Dark Mode 🌙 to switch themes dynamically
+
+### Preview
+
